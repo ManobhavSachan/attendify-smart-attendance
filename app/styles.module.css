@@ -81,6 +81,8 @@
 
 }
 
+
+
 .quote{
   padding-bottom: 4vh;
   padding-top: 10vh;
@@ -307,6 +309,27 @@
   border: none;
   border-radius: 0.5rem;
   font-size: 5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+.DelBtn{
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  background-color: #6a3299;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: "Sedan", serif;

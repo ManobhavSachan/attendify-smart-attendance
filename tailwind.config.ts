@@ -22,7 +22,6 @@ const config: Config = {
 
           "primary": "#f5f7f6",
 
-
         },
       },
     ],
