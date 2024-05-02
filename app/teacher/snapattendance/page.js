@@ -55,10 +55,12 @@ const ReactApp = () => {
         );
         alert("Just after put call");
         console.log("response", response);
-        processImage(now);
+        
       } catch (error) {
         console.error("Error processing image:", error);
+        alert("Error processing image:", error);
       }
+      processImage(now);
     } else {
       console.log("No image selected");
     }
