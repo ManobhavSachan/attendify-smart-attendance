@@ -14,7 +14,7 @@ export default function OnboardingButton() {
 
       <div className={styles.onbdtext}>
         <h1 className={styles.cinzel2}>
-          "Picture your presence through ATTENDIFY"
+          {"Picture your presence through ATTENDIFY"}
         </h1>
       </div>
 

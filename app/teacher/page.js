@@ -53,7 +53,7 @@ const TeacherPage = () => {
 
 
       <div className={styles.quote2}>
-        <h1 className={styles.caveat}>"The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires." </h1>
+        <h1 className={styles.caveat}>{"The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires."} </h1>
       </div>
 
       <div className={styles.teabtpos}>

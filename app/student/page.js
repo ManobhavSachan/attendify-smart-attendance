@@ -40,7 +40,7 @@ const StudentPage = () => {
         </div>
 
       <div className={styles.quote}>
-        <h1 className={styles.caveat}>"In the symphony of education, let each note of knowledge resonate within your soul." </h1>
+        <h1 className={styles.caveat}>{"In the symphony of education, let each note of knowledge resonate within your soul."} </h1>
       </div>
 
       <div className={styles.teabtpos}>
