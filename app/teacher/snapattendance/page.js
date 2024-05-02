@@ -41,6 +41,7 @@ const ReactApp = () => {
   const uploadTheImage = async () => {
     if (image && uploadImage) {
       const now = getCurrentDateTimeString();
+      alert("Just before put call");
       // setImageId(now);
       try {
         const response = await axios.put(
@@ -52,6 +53,7 @@ const ReactApp = () => {
             },
           }
         );
+        alert("Just after put call");
         console.log("response", response);
         processImage(now);
       } catch (error) {
@@ -63,6 +65,7 @@ const ReactApp = () => {
   };
 
   const selectImage = async () => {
+    alert("Select Image");
     const fileInput = document.createElement("input");
     fileInput.type = "file";
     fileInput.accept = "image/*";
@@ -108,12 +111,13 @@ const ReactApp = () => {
       formData.append("image", uploadImage);
       formData.append("upscaling", upscaling);
       formData.append("threshold", threshold);
-
+      alert("Just before axios call");
       setAnnotatedImage(null);
       try {
         const response = await axios.get(
           `https://h30rztz2q8.execute-api.ap-south-1.amazonaws.com/dev/user/?objectKey=${now}.jpeg`
         );
+        alert("Just after axios call");
         // const data = await response.json();
         console.log(response.data.DetectedPersons);
         alert(response.data.DetectedPersons);
