@@ -52,7 +52,7 @@ const HomePage = () => {
       </div> */}
 
       <div className={styles.quote}>
-        <h1 className={styles.caveat}>"Attending class isn't just about being present; it's about actively engaging in the journey of learning."</h1>
+        <h1 className={styles.caveat}>{"Attending class isn't just about being present; it's about actively engaging in the journey of learning."}</h1>
       </div>
 
 

@@ -402,7 +402,7 @@ const ReactApp = () => {
 
           <div>
             <h1 className={styles.caveat2}>
-              "Faces become signatures, photos mark the present."{" "}
+              {"Faces become signatures, photos mark the present."}
             </h1>
           </div>
 

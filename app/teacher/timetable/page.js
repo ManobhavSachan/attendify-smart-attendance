@@ -40,7 +40,7 @@ const timetable = () => {
       <h1 className={styles.hometext}>Choose your day!</h1>
 
       <div className={styles.ttquote}>
-        <h1 className={styles.caveat}>"Timetables are the architects of discipline and organization and it is a blueprint for productivity." </h1>
+        <h1 className={styles.caveat}>{"Timetables are the architects of discipline and organization and it is a blueprint for productivity."} </h1>
       </div>
 
       <div className={styles.teabtpos}>
