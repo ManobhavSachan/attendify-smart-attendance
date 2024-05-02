@@ -83,12 +83,12 @@ const timetable = () => {
         </Link>
       </div>
 
-      <div className={styles.teabtpos}>
+      {/* <div className={styles.teabtpos}>
 
         <Link href="/student/timetable/update" className={styles.dayBtn}>
           Update Time Table
         </Link>
-      </div>
+      </div> */}
 
     </div>
   );
