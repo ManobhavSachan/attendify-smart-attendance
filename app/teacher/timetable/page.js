@@ -1,0 +1,114 @@
+import Link from 'next/link';
+import styles from '../../styles.module.css';
+import Image from 'next/image';
+import name from '../../../Assets/reply_20dp.png';
+import text from '../../../Assets/NavBartex.png';
+
+const timetable = () => {
+  return (
+    <div className={styles.homecontainer}>
+
+
+      <div>
+
+
+
+        <div className="navbar bg-primary bg-base-100">
+          <div className="navbar-start">
+            <button className="btn btn-ghost btn-circle">
+              <div className="indicator">
+                <Link href="/teacher">
+                  {/* <TiArrowBack /> */}
+                  <Image className={styles.navimgpos} src={name} />
+                </Link>
+              </div>
+            </button>
+          </div>
+
+          <div className="navbar-center">
+            <Image className={styles.navtexpos} src={text} width={150} />
+            {/* <h1 className={styles.aboretosmall}>
+      {"ATTENDIFY"}
+    </h1> */}
+          </div>
+          <div className="navbar-end">
+            <div className="dropdown dropdown-bottom dropdown-end">
+              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </div>
+              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-36">
+                <li><Link href="/home" >Home</Link></li>
+                <li><Link href="onboarding" >Logout</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <h1 className={styles.hometext}>Choose your day!</h1>
+
+      <div className={styles.ttquote}>
+        <h1 className={styles.caveat}>{"Timetables are the architects of discipline and organization and it is a blueprint for productivity."} </h1>
+      </div>
+
+      <div className={styles.teabtpos}>
+        <Link href="/teacher/timetable/monday" className={styles.dayBtn}>
+          Monday
+        </Link>
+      </div>
+
+      <div className={styles.teabtpos}>
+
+        <Link href="/teacher/timetable/tuesday" className={styles.dayBtn}>
+          Tuesday
+        </Link>
+      </div>
+
+      <div className={styles.teabtpos}>
+        <Link href="/teacher/timetable/wednesday" className={styles.dayBtn}>
+          Wednesday
+        </Link>
+      </div>
+
+
+      <div className={styles.teabtpos}>
+
+        <Link href="/teacher/timetable/thursday" className={styles.dayBtn}>
+          Thursday
+        </Link>
+      </div>
+
+
+      <div className={styles.teabtpos}>
+        <Link href="/teacher/timetable/friday" className={styles.dayBtn}>
+          Friday
+        </Link>
+      </div>
+
+      <div className={styles.teabtpos}>
+        <Link href="/teacher/timetable/saturday" className={styles.dayBtn}>
+          Saturday
+        </Link>
+      </div>
+
+      {/* <div className={styles.teabtpos}>
+
+        <Link href="/teacher/timetable/update" className={styles.dayBtn}>
+          Update Time Table
+        </Link>
+      </div> */}
+
+      {/* <div className={styles.teabtpos}>
+        <Link href="/teacher" className={styles.backbtn}>
+          Back
+        </Link>
+      </div> */}
+
+    </div>
+  );
+};
+
+export default timetable;
