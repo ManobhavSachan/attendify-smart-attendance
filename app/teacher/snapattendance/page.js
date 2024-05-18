@@ -126,6 +126,7 @@ const ReactApp = () => {
         setDetectedPersons(response.data.DetectedPersons);
         // setAnnotatedImage(data:image/jpeg;base64,${response.data.image});
       } catch (error) {
+        alert("Error processing img:", error);
         console.error("Error processing image:", error);
       }
     } else {
