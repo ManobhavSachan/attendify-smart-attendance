@@ -1,3 +1,13 @@
+## Attendify
+
+Technologies Used: NextJs, Python, AWS Lamda, S3 Bucket, API Gateway, PWA, Docker.
+- Built a group attendance taking app using PWA NextJs.
+- Used Lambda Functions on AWS for the API’s.
+- Utilised Amazon FaceRekognition for the Image Recognition.
+- Created Attendance Report automation using the Google Sheet API.
+
+<img width="1440" alt="ss-attendify" src="https://github.com/user-attachments/assets/a0093fa2-01dc-4a83-b82d-35a43d9a1213" />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
